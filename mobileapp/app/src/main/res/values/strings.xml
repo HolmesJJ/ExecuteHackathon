@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">EnactusApp</string>
+
+    <string name="contact">Contact</string>
+    <string name="dialog">Dialog</string>
+    <string name="speak">Speak</string>
+    <string name="objectDetection">Detection</string>
+    <string name="profile">Profile</string>
+    <string name="login">Login</string>
+    <string name="notification">Notification</string>
+    <string name="bluetooth">Bluetooth</string>
+
+    <string name="rationale_init">APP Needs some Permission</string>
+    <string name="permissions_denied_content_str">Permission Denied \nOpen Setting to Modify APP Permission</string>
+    <string name="need_permissions_str">Permission Required</string>
+
+    <string name="possibleAnswers">Possible Answers</string>
+    <string name="t2keyboard">T2 Keyboard</string>
+    <string name="t26keyboard">T26 Keyboard</string>
+
+    <string name="prompt_username">Username</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in</string>
+</resources>

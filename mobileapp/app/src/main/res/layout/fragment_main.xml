@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:FixedAspectRatioRelativeLayout="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/fl_main_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/bottom_bar_height" />
+
+    <com.example.enactusapp.UI.FixedAspectRatioRelativeLayout
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        FixedAspectRatioRelativeLayout:aspect_ratio_width="480"
+        FixedAspectRatioRelativeLayout:aspect_ratio_height="640">
+
+        <TextureView
+            android:id="@+id/tv_front_camera"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </com.example.enactusapp.UI.FixedAspectRatioRelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/pb_gaze"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="@dimen/bottom_bar_height"
+        style="?android:attr/progressBarStyleHorizontal"/>
+
+    <com.example.enactusapp.UI.BottomBar
+        android:id="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bottom_bar_height"
+        android:layout_gravity="bottom" />
+
+    <com.example.enactusapp.EyeTracker.PointView
+        android:id="@+id/pv_point"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <com.example.enactusapp.EyeTracker.CalibrationViewer
+        android:id="@+id/cv_calibration"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <Button
+        android:id="@+id/btn_stop_calibration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:visibility="gone"
+        android:text="Stop"/>
+
+</FrameLayout>

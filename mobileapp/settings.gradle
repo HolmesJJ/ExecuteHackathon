@@ -1,0 +1,5 @@
+include ':bluetoothlibrary'
+include ':gazetracker-release'
+include ':libgaze-release'
+include ':app'
+include ':openCVLibrary340'
